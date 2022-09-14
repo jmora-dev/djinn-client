@@ -8,6 +8,9 @@ import {
 
 interface AuthContextProps {
   isAuthenticated: boolean;
+  user: undefined | User;
+  login: (userAuth: User) => void;
+  logout: () => void;
 }
 
 interface User {
